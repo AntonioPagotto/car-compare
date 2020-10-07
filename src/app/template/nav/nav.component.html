@@ -1,0 +1,31 @@
+<div class="content">
+    <table mat-table [dataSource]="carro" class="mat-elevation-z8">
+              <!-- valor
+              <ng-container matColumnDef="marca">
+                <th mat-header-cell *matHeaderCellDef>Marca</th>
+                <td mat-cell *matCellDef="let row">{row.marca}</td>
+              </ng-container>
+              <!-- valor -->
+              <ng-container matColumnDef="modelo">
+                <th mat-header-cell *matHeaderCellDef>Modelo</th>
+                <td mat-cell *matCellDef="let row">{row.modelo}</td>
+              </ng-container>
+              <!-- valor -->
+              <ng-container matColumnDef="anomodelo">
+                <th mat-header-cell *matHeaderCellDef>Ano Modelo</th>
+                <td mat-cell *matCellDef="let row">{row.anomodelo}</td>
+              </ng-container>
+              <!-- valor -->
+              <ng-container matColumnDef="valor">
+                <th mat-header-cell *matHeaderCellDef>Valor</th>
+                <td mat-cell *matCellDef="let row">{row.valor}</td>
+              </ng-container>       
+              <!-- action -->
+              <ng-container matColumnDef="valor">
+                <th mat-header-cell *matHeaderCellDef>Valor</th>
+                <td mat-cell *matCellDef="let row">{row.valor}</td>
+              </ng-container>        -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+</div>
